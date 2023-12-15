@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 
+
 class Link(models.Model):
     name = models.CharField(max_length=50, unique=True)
     url = models.URLField(max_length=200)
